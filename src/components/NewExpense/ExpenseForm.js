@@ -9,18 +9,18 @@ const ExpenseForm = (props) => {
   });
 
   const titleChangeHandler = (event) => {
-    setUserInput((prevState) => {
-      return { ...prevState, enteredTitle: event.target.value };
+    setUserInput((prevUserInput) => {
+      return { ...prevUserInput, enteredTitle: event.target.value };
     });
   };
   const amountChangeHandler = (event) => {
-    setUserInput((prevState) => {
-      return { ...prevState, enteredAmount: event.target.value };
+    setUserInput((prevUserInput) => {
+      return { ...prevUserInput, enteredAmount: event.target.value };
     });
   };
   const dateChangeHandler = (event) => {
-    setUserInput((prevState) => {
-      return { ...prevState, enteredDate: event.target.value };
+    setUserInput((prevUserInput) => {
+      return { ...prevUserInput, enteredDate: event.target.value };
     });
   };
 
